@@ -3,30 +3,40 @@ logLevel: WARN
 
 Tautulli:
   Connection:
-    URL: <span class=s2>&quot;http://tautulli:8181&quot;</span> <span class=c1># change this if tautulli is not installed from Dockserver.</span>
+    URL: <span class=s2>&quot;&quot;</span>
     APIKey: <span class=s2>&quot;&quot;</span>
   Customization:
     TerminateMessage: <span class=s2>&quot;Your stream has been terminated. Please contact the admin in the Discord.&quot;</span>
-    <span class=c1># how often (seconds) the bot pulls new data. I&#39;d recommend not making the bot ping Tautulli more often than every 5 seconds.</span>
+    <span class=c1># how often (seconds) the bot pulls new data. 5-second minimum built-in, it&#39;s for your own good</span>
     RefreshSeconds: <span class=m>15</span>
-    <span class=c1># can only kill streams if you have a plex pass, so this controls whether you&#39;re given the option</span>
+    <span class=c1># can only kill streams if you have a Plex Pass, so this controls whether you&#39;re given the option</span>
     PlexPass: <span class=nb>true</span>
     ServerTimeZone: <span class=s2>&quot;UTC&quot;</span>
     Use24HourTime: <span class=nb>false</span>
-  LibraryNames:
-    <span class=c1># list of names of the libraries you&#39;d like stats about</span>
-    <span class=c1># Voice channels will be made/updated with stats (refreshed every hour)</span>
-    - Movies
-    - TV Shows
-    - Music
+    VoiceChannels:
+      CategoryName: <span class=s2>&quot;Tautulli Stats&quot;</span>
+      StreamCount: <span class=nb>false</span>
+      TranscodeCount: <span class=nb>false</span>
+      Bandwidth: <span class=nb>false</span>
+      LocalBandwidth: <span class=nb>false</span>
+      RemoteBandwidth: <span class=nb>false</span>
+      LibraryStats: <span class=nb>false</span>
+      LibraryRefreshSeconds: <span class=m>3600</span>
+      LibraryNames:
+        <span class=c1># list of names of the libraries you&#39;d like stats about</span>
+        <span class=c1># Voice channels will be made/updated with stats (refreshed every hour)</span>
+        - Movies
+        - TV Shows
+        - Music
 
 Discord:
   Connection:
     BotToken: <span class=s2>&quot;&quot;</span>
     <span class=c1># Right-click on your server&#39;s icon -&gt; &quot;Copy ID&quot;</span>
-    ServerID: <span class=m>00000000000000000</span>
+    ServerID: <span class=m>472537215457689601</span>
     <span class=c1># Right-click on your profile picture -&gt; &quot;Copy ID&quot;</span>
-    OwnerID: <span class=m>00000000000</span>
+    AdminIDs:
+      - <span class=m>00000000000</span>
     <span class=c1># Where the live stats will be posted</span>
     ChannelName: <span class=s2>&quot;tautulli&quot;</span>
   Customization:
