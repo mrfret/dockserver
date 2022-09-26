@@ -14,20 +14,23 @@ Tautulli:
     ServerTimeZone: <span class=s2>&quot;UTC&quot;</span>
     Use24HourTime: <span class=nb>false</span>
     VoiceChannels:
-      CategoryName: <span class=s2>&quot;Tautulli Stats&quot;</span>
-      StreamCount: <span class=nb>false</span>
-      TranscodeCount: <span class=nb>false</span>
-      Bandwidth: <span class=nb>false</span>
-      LocalBandwidth: <span class=nb>false</span>
-      RemoteBandwidth: <span class=nb>false</span>
-      LibraryStats: <span class=nb>false</span>
-      LibraryRefreshSeconds: <span class=m>3600</span>
-      LibraryNames:
-        <span class=c1># list of names of the libraries you&#39;d like stats about</span>
-        <span class=c1># Voice channels will be made/updated with stats (refreshed every hour)</span>
-        - Movies
-        - TV Shows
-        - Music
+      Stats:
+        CategoryName: <span class=s2>&quot;Tautulli Stats&quot;</span>
+        StreamCount: <span class=nb>false</span>
+        TranscodeCount: <span class=nb>false</span>
+        Bandwidth: <span class=nb>false</span>
+        LocalBandwidth: <span class=nb>false</span>
+        RemoteBandwidth: <span class=nb>false</span>
+      Libraries:
+        CategoryName: <span class=s2>&quot;Tautulli Libraries&quot;</span>
+        Enable: <span class=nb>false</span>
+        LibraryRefreshSeconds: <span class=m>3600</span>
+        LibraryNames:
+          <span class=c1># list of names of the libraries you&#39;d like stats about</span>
+          <span class=c1># Voice channels will be made/updated with stats (refreshed every hour)</span>
+          - Movies
+          - TV Shows
+          - Music
 
 Discord:
   Connection:
